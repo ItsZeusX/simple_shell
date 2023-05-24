@@ -8,15 +8,15 @@
  */
 int main(int ac __attribute__((unused)), char **av)
 {
-	(void) av;
-	char *lineptr = NULL, *prompt = "(OurTerm) $ ";
+	char *lineptr = NULL;
+	char *prompt = "(OurTerm) $ ";
 	char *exiting = "exiting the terminal...\n";
 	char *lineptr_copy = NULL;
 	size_t n = 0;
 	char *word;
 	int word_count = 0;
 	ssize_t bytes_read;
-
+	(void) av;
 	while (true)
 	{
 		write(STDOUT_FILENO, prompt, _strlen(prompt));

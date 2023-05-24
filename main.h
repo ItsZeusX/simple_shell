@@ -77,7 +77,7 @@ char *_strtok(char *str, const char *delim);
  *
  */
 
-void tokenize(char **av, int word_count, char *lineptr_copy, char *word);
+int tokenize(char **av, int word_count, char *lineptr_copy, char *word);
 
 /**
  * handle_path - handles the PATH variable
